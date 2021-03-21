@@ -13,7 +13,12 @@ body {
 
 @font-face {
     font-family: 'Cheque', serif;
-    src: url('../fonts/Cheque\ Regular\ 400.otf') format('otf');
+    src:url('../fonts/Cheque-Regular.otf') format('otf'),
+        url('../fonts/Cheque-Regular.woff2') format('woff2'),
+        url('../fonts/Cheque-Regular.woff') format('woff'),
+        url('../fonts/Cheque-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
 .content-wrapper {
