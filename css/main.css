@@ -1,24 +1,23 @@
 /***** BASE STYLES *****/
 
+@font-face {
+    font-family: 'Cheque';
+    src: url('/fonts/Cheque-Regular.woff2') format('woff2'),
+         url('/fonts/Cheque-Regular.woff') format('woff'),
+         url('/fonts/Cheque-Regular.ttf') format('truetype'),
+		 url('/fonts/Cheque-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 html {
     font-size: 16px;
     line-height: 24px;
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
     background: #f6f6f6;
     max-width: 1200px;
-}
-
-@font-face {
-    font-family: 'Cheque', serif;
-    src:url('../fonts/Cheque-Regular.otf') format('otf'),
-        url('../fonts/Cheque-Regular.woff2') format('woff2'),
-        url('../fonts/Cheque-Regular.woff') format('woff'),
-        url('../fonts/Cheque-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
 }
 
 .content-wrapper {
@@ -55,16 +54,25 @@ header #banner {
     width: 100%;
 }
 
+header .content-wrapper {
+    flex-flow: column wrap;
+}
+
 header h1 {
-    font-family: 'Cheque', serif;
-    font-size: 2.2em;
+    font-family: 'Cheque';
+    font-size: 2em;
     color: #000000;
+    text-align: center;
     margin: 0;
+}
+
+header .half-width {
+    text-align: center;
 }
 
 header h3 {
     font-family: 'Anonymous Pro', 'Courier New', Courier, monospace;
-    font-size: 1.8em;
+    font-size: 1.5em;
     color: #000000;
     margin: 0;
     padding: 5px 0 10px 0;
@@ -90,7 +98,7 @@ header h3 {
 }
 
 #nav ul li a {
-    font-size: .5em;
+    font-size: .55em;
     font-weight: bold;
     color: #2b2b2b;
     text-transform: uppercase;
@@ -242,7 +250,6 @@ header h2 span {
 header h1 {
     font-size: 5em;
     padding: 20px 0;
-    text-align: center;
 }
 
 header h3 {
@@ -259,7 +266,7 @@ header h3 {
 }
 
 #nav ul li a {
-    font-size: 1em; 
+    font-size: 1.15em; 
 }
 
 header h2 {
@@ -286,10 +293,6 @@ header h2 {
 }
 
     /***** TABLET WORK SECTION *****/
-
-#work {
-    padding: 20px 0 25px 0;
-}
 
 #work .third-width {
     width: 33%;
@@ -366,14 +369,18 @@ header h2 {
 
     /***** LAPTOP HEADER *****/
 
+header .content-wrapper {
+    flex-flow: row wrap;
+}
+    
 header h1 {
-    letter-spacing: 15px;
-    margin-top: 0;
+    font-size: 5.5em;
+    letter-spacing: 10px;
 }
 
 header h3 {
-    padding-left: 10px;
-    border-bottom: hidden;
+    padding-top: 25px;
+    border-bottom: hidden !important;
 }
 
 header .half-width {
@@ -381,7 +388,15 @@ header .half-width {
 }
 
 #nav {
-    padding: 30px 10px 0 25px;
+    padding: 30px 0 0 20px;
+}
+
+#nav ul li {
+    padding-right: 10px;
+}
+
+#nav ul li a {
+    font-size: 1.2em;
 }
 
 header h2 {
@@ -407,7 +422,7 @@ header h2 {
 
     /***** LAPTOP WORK SECTION *****/
 
-#work {
+#work .content-wrapper {
     padding: 30px 0;
 }
 
@@ -482,7 +497,7 @@ header h2 {
     font-size: 1.5em;
 }
 
-#work {
+#work .content-wrapper{
     padding: 40px 0;
 }
 
