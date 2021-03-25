@@ -27,7 +27,7 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     width: 90%;
-    margin: 0 15px;
+    margin: 0 auto;
 }
 
 .third-width {
@@ -58,6 +58,7 @@ header #banner {
 
 header .content-wrapper {
     flex-flow: column wrap;
+    align-items: center;
 }
 
 header h1 {
@@ -195,16 +196,18 @@ header h2 span {
 
 #contact h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
     color: #ebebeb;
+    margin-bottom: 20px;
 }
 
 #contact #email-header {
     font-family: 'Anonymous Pro', 'Courier New', Courier, monospace;
-    font-size: .65em;
+    font-size: .75em;
+    line-height: 1em;
     font-weight: normal;
     color: #ebebeb;
-    margin: -15px 0 5px 0;
+    margin: -15px 0 5px 15px;
 }
 
 #contact #envelope {
@@ -243,10 +246,6 @@ header h2 span {
 /* -- TABLET STYLES -- */
 @media (min-width: 768px) {
 
-.content-wrapper {
-    margin: 0 35px;
-}
-
     /***** TABLET HEADER *****/
 
 header h1 {
@@ -274,7 +273,7 @@ header h3 {
 header h2 {
     font-size: 1.75em;
     line-height: 1.5em;
-    padding: 50px 0 40px 0;
+    padding: 50px 0 40px 80px;
 }
 
     /***** TABLET ABOUT SECTION *****/
@@ -365,10 +364,6 @@ header h2 {
 /* -- LAPTOP STYLES -- */
 @media (min-width: 1024px) {
 
-.content-wrapper {
-    margin: 0 50px;
-}
-
     /***** LAPTOP HEADER *****/
 
 header .content-wrapper {
@@ -390,7 +385,7 @@ header .half-width {
 }
 
 #nav {
-    padding: 30px 0 0 20px;
+    padding: 30px 0 31px 20px;
 }
 
 #nav ul li {
@@ -458,10 +453,11 @@ header h2 {
 
 #contact-img {
     width: 100%;
+    margin-top: 25px;
 }
 
 #contact h2 {
-    font-size: 1.7em;
+    font-size: 1.6em;
     margin-left: 27px;
 }
 
@@ -513,11 +509,11 @@ header h2 {
 }
 
 #contact h2 {
-    font-size: 2em;
+    font-size: 1.98em;
 }
 
 #contact #email-header {
-    font-size: 1.75em;
+    font-size: 1.5em;
 }
 
 #contact #envelope {
@@ -531,5 +527,29 @@ header h2 {
 #contact #socialmedia-header {
     margin-top: 60px;
 }
+
+}
+
+@media only screen and (max-width: 319px) {
+    
+    header h1 {
+        font-size: 1.857em;
+    }
+
+    header h2 {
+        font-size: .85em;
+    }
+
+    #contact h2 {
+        font-size: .9em;
+    }
+
+    #contact #email-header {
+        font-size: .7em;
+    }
+
+    #copyright p {
+        font-size: .5em;
+    }
 
 }
