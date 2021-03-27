@@ -397,7 +397,7 @@ header .half-width {
 }
 
 #nav {
-    padding: 30px 0 29px 15px;
+    padding: 30px 0 32px 15px;
 }
 
 #nav ul li {
@@ -499,6 +499,10 @@ header h1 {
 header h2 {
     font-size: 2em;
     padding-top: 75px;
+}
+
+#nav {
+    padding-bottom: 30px;
 }
 
 #nav ul li a {
