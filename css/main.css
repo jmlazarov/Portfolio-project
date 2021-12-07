@@ -42,7 +42,7 @@ body {
 
 #copyright {
     margin-top: auto;
-    vertical-align: bottom;
+	vertical-align: bottom;
     padding-bottom: 5px;
 }
 
@@ -54,29 +54,30 @@ body {
 
 a {
     color: #7f7f7f;
-    text-decoration-color: #ff6600;
+    text-decoration-color: #0394bd;
 }
 
     /***** MOBILE HEADER *****/
 
 header #banner {
     width: 100%;
+	height: auto;
 }
 
 header .content-wrapper {
     flex-flow: column wrap;
     align-items: center;
-    background-color: #6600ff4f;
+    background-color: #dac2ff;
     width: 100%;
 }
 
 header h1 {
     font-family: 'Cheque-Regular';
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 400;
     color: #000000;
     text-align: center;
-    margin: 10px 0 5px 0;
+    margin: 5px 0 5px 0;
 }
 
 header .half-width {
@@ -89,8 +90,9 @@ header h3 {
     color: #000000;
     margin: 0;
     padding-bottom: 10px;
+	padding-top: 5px;
     text-align: center;
-    border-bottom: 1px solid #ff6600;
+    border-bottom: 1px solid #0394bd;
     width: 100%;
 }
 
@@ -127,7 +129,7 @@ header h2 {
 }
 
 header h2 span {
-    color: #ff6600;
+    color: #0394bd;
     font-size: 1.5em;
 }
 
@@ -157,7 +159,7 @@ header h2 span {
 
 #work {
     text-align: center;
-    background-color: #6600ff4f;
+    background-color: #dac2ff;
     padding: 20px 0;
 }
  
@@ -227,7 +229,7 @@ header h2 span {
 #contact a {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.1em;
-    color: #ff6600;
+    color: #0394bd;
     text-decoration: underline;
 }
 
@@ -254,7 +256,7 @@ header h2 span {
 }
 
 /* -- TABLET STYLES -- */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
     /***** TABLET HEADER *****/
 
@@ -375,7 +377,7 @@ header h2 {
 }
 
 /* -- LAPTOP STYLES -- */
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 
     /***** LAPTOP HEADER *****/
 
@@ -394,7 +396,7 @@ header h3 {
 }
 
 header .half-width {
-    border-bottom: 1px solid #ff6600;
+    border-bottom: 1px solid #0394bd !important;
 }
 
 #nav {
@@ -490,7 +492,7 @@ header .half-width {
 }
 
 /* -- DESKTOP STYLES -- */
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
 
 header h1 {
     font-size: 5.85em;
@@ -554,7 +556,7 @@ header h2 {
 
 }
 
-@media only screen and (max-width: 319px) {
+@media screen and (max-width: 319px) {
     
     header h1 {
         font-size: 1.85em;
